@@ -23,7 +23,8 @@ base_dir = r'/home/runner/work/ghost_nlp/ghost_nlp/'
 
 each_dir_to_time = []
 for each_dir_name in os.listdir(base_dir):
-    if each_dir_name == 'script':
+    ignore_list = ['script', 'LICENSE', 'requirements.txt']
+    if each_dir_name in ignore_list:
         continue
     if '.' not in each_dir_name:
         each_dir_to_time.append([each_dir_name, os.path.getctime(base_dir+each_dir_name)])
