@@ -18,6 +18,8 @@ import os
 
 readme_file_path = "/home/runner/work/ghost_nlp/ghost_nlp/README.md"
 base_dir = r'/home/runner/work/ghost_nlp/ghost_nlp/'
+# readme_file_path = "../README.md" # TEST Code
+# base_dir = "../" # TEST Code
 
 each_dir_to_time = []
 for each_dir_name in os.listdir(base_dir):
@@ -28,9 +30,11 @@ for each_dir_name in os.listdir(base_dir):
 
 most_recent_dir = max(each_dir_to_time, key=lambda x: x[1])[0]
 tmp = list(list(most_recent_dir.split('-')))
-category, folderName, year, status = tmp[0], tmp[1], tmp[2], tmp[3]
-
+category, year, folderName, status = tmp[0], tmp[1], tmp[2], tmp[3]
+# print(tmp)
+# print(category, folderName, year, status)
 curr_folder_path = f"/home/runner/work/ghost_nlp/ghost_nlp/{most_recent_dir}/"
+# curr_folder_path = f"../{most_recent_dir}" # Testing Code
 
 target_paper_review_file = ""
 checkList = []
