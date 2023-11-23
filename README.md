@@ -14,3 +14,4 @@
 ## Paper List
 |Category|Year|Title|Review|
 |--------|----|-----|------|
+| Model | 2017 | Transformer_Attention_is_all_you_need | ✅ |
