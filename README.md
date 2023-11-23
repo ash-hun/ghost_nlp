@@ -1,4 +1,5 @@
 <div align='center'>
+    <img src="./assets/ghost-nlp.png" width="50%"/>
     <h1>Ghost NLP</h1>
     <p>I am full of resentment because I cannot study NLP.</p>
 </div>
